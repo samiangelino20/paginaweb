@@ -1,0 +1,67 @@
+<center><table border="1" ></center>
+<tr>
+<td colspan="3"><head><center><img src="Encabezado.png" widht="90" height="145"></center></head></td>
+</tr>
+ 
+<td colspan="3"><center><h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Colegio de Estudios Cientificos y Tecniologicos del Estado de Mexico.     
+Modulo 3: submodulo 2 y submodulo 3.</center></div align</del></u></p></font size></font color</font face></center></h1>
+<h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Nombres del Alumno:Samuel Angelino Garcia      
+</center></div align</del></u></p></font size></font color></font face></center></h1>
+<p><font color="black" size="3" face="tohoma"><center><strong>Elaborado por:</strong> Samuel Angelino Garcia.
+<strong>Grupo:</strong>402  <strong>  Numero de lista:4</strong><br>
+<strong>Ciclo Escolar:</strong>2024-2024<strong></center>
+<br>
+
+<meta charset="utf-8">
+<?php
+include("conexion.php");
+?>
+<center><table width="900" border="1" >
+<form action="" method="post">
+<tr><td colspan="3" bgcolor="purple"><center>INSERTAR REGISTROS</center></td></tr>
+<tr><td>  Id:</td> <td> <input required name="Id"><br></td>
+<td rowspan="6"><center><img src="Escuela.png" widht="90" height="170"></center></td></tr>
+<tr><td>Nombre:</td> <td><input name="nom"><br></td></tr>
+<tr><td>T_S:</td> <td><input name="t_s"><br></td></tr>
+<tr><td> Dom:</td> <td><input name="dom"><br></td></tr>
+<tr><td> Tel:</td> <td><input name="tel"><br></td></tr>
+<tr><td>   Nac:</td> <td><input name="nac"><br></td></tr>
+<tr><td colspan="3"><center> <input type="submit" value="INSERTAR"></center></td></tr>
+
+</form>
+<center><table border="0">
+<br>
+<br><center><img src="pie.jpg" widht="200" height="40"></center><br>
+"<footer>
+  <p>&copy; 2024 Caratula Samuel Angelino Garcia </p>
+  <ul>
+    <li><a href="/acerca-de"> >>"No se npermite la reproduccion de este documento"</a></li>
+    <li><a href="/conectar">Autor: Samuel Angelino Garcia</a></li>
+  </ul>
+</footer>"
+
+<?php
+if ($_POST){
+         $f=$_POST['Id'];
+         $n=$_POST['nom'];
+         $a=$_POST['t_s'];
+         $d=$_POST['dom'];
+         $t=$_POST['tel'];
+         $c=$_POST['nac'];
+
+$sql=("insert into 31_finel (Id,Nombre,T_S,Dom,Tel,Nac)values ('$f','$n','$a','$d','$t','$c')") or die(mysql_error());
+if(mysqli_query($con,$sql)){
+echo"<script>
+alert('El registro se guardo correctamente');
+</script>";
+
+
+}
+else{
+echo"<script>
+alert('El alumno ya existe en la base de datos y no se puede dar de alta');
+</script>";
+
+}
+}
+?>

@@ -1,0 +1,62 @@
+<center><img src="Encabezado.png" width="1000" height="120"></center><br>
+
+<center><h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Colegio de Estudios Cientificos y Tecniologicos del Estado de Mexico.     
+Modulo 3: submodulo 2 y submodulo 3.</center></div align</del></u></p></font size></font color</font face></center></h1>
+<h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Nombres del Alumno:Samuel Angelino Garcia      
+</center></div align</del></u></p></font size></font color></font face></center></h1>
+<p><font color="black" size="3" face="tohoma"><center><strong>Elaborado por:</strong> Samuel Angelino Garcia.
+<strong>Grupo:</strong>402  <strong>  Numero de lista:4</strong><br>
+<strong>Ciclo Escolar:</strong>2024-2024<strong></center>
+<br>
+
+<meta charset="utf-8">
+<?php
+	$conexion=mysqli_connect('localhost','root','','cine');
+?>
+<!DOCTYPE html>
+<html>
+<head><title>Mostrar datos de la tabla</title></head>
+<body>
+	<br>
+	<center><table border="1">
+		<tr>
+
+			<td bgcolor="Orange">Folio</td>	
+			<td bgcolor="Orange">Nombre</td>
+			<td bgcolor="Orange">Apellido Paterno</td>
+			<td bgcolor="Orange">Password</td>
+		</tr>
+
+		<?php
+		$sql="SELECT  * from 31_diego";
+		$result=mysqli_query($conexion,$sql);
+		while($mostrar=mysqli_fetch_array($result)){
+			?>
+			<tr>
+				<td><?php echo $mostrar['Folio'] ?></td>
+					<td><?php echo $mostrar['Nombre'] ?></td>
+						<td><?php echo $mostrar['A_P'] ?></td>
+							<td><?php echo $mostrar['Password'] ?></td>
+						</tr>
+						<?php
+					}
+				?>
+			</table></center><br>
+			<center><input name="button" type="button" class="Estilo22"
+				onClick="javascript:print()" value="IMPRIMIR"/></center>
+			</body>
+			</html>
+<br><center><img src="pie.jpg" widht="250" height="50"></center><br>
+"<footer>
+  <p>&copy; 2024 Caratula Samuel Angelino Garcia </p>
+  <ul>
+    <li><a href="/acerca-de"> >>"No se npermite la reproduccion de este documento"</a></li>
+    <li><a href="/conectar">Autor: Samuel Angelino Garcia</a></li>
+  </ul>
+</footer>"
+
+</body>
+</html>          
+
+                         
+                         

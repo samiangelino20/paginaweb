@@ -1,0 +1,85 @@
+<center><img src="Encabezado.png" width="1000" height="120"></center><br>
+
+
+<html>
+      <head><title>Suma.html</title></head>
+
+<center><h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Colegio de Estudios Cientificos y Tecniologicos del Estado de Mexico.     
+Modulo 3: submodulo 2 y submodulo 3.</center></div align</del></u></p></font size></font color></font face></center></h1>
+<h1><font size="2"><font face="Comic Sans MS"><font color="black"><div align="justify"><center>Nombres del Alumno:Samuel Angelino Garcia      
+</center></div align></del></u></p></font size></font color></font face></center></h1>
+<p><font color="black" size="3" face="tohoma"><center><strong>Elaborado por:</strong> Samuel Angelino Garcia.
+<strong>Grupo:</strong>402  <strong>  Numero de lista:4</strong><br>
+<strong>Ciclo Escolar:</strong>2024-2024<strong></center>
+<br>
+
+<script>
+function suma(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1+n2;
+}
+</script>
+<script>
+function resta(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1-n2;
+}
+</script>
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1*n2;
+}
+</script>
+<script>
+function dividir(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1/n2;
+}
+</script>
+
+<body>
+<center><table width="1000" border="1">
+<form name="MyForm">
+<tr>
+<td width="200"><label>Dame el 1er Numero:</label></td>
+<td width="200"><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><img src."suma.jpg"></td>
+</tr>
+
+<tr>
+<td><label>Dame el 2do Numero:</label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+
+<tr>
+<td><label>Mostrar Resultado:</label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+<tr>
+<td colspan="2" aling="center"><input type="button" value="Suma" onclick="suma()">
+<input type="button" value="RESTA" onclick="resta()">
+<input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+<input type="button" value="DIVISION" onclick="dividir()"></td>
+</tr>
+
+</form>
+</center></table>
+<tr>
+<td colspan="3"><center><img src="pie.jpg" width="700" height="50">
+"<footer>
+  <p>&copy; 2024  Samuel Angelino Garcia </p>
+  <ul>
+    <li><a href="/acerca-de"> >>"No se npermite la reproduccion de este documento"<< </a></li>
+    <li><a href="/conectar">Autor: Samuel Angelino Garcia</a></li>
+  </ul>
+</footer>"
+</center></table></br></td>
+</body>
+</html>
+
+
